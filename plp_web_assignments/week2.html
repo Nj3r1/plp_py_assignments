@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page with Registration</title>
+</head>
+<body>
+    <!-- Ordered List Section -->
+    <section>
+        <h2>Priority Tasks</h2>
+        <ol type="I">
+            <li>Complete HTML structure</li>
+            <li>Add semantic elements</li>
+            <li>Implement form validation</li>
+            <li>Test cross-browser compatibility</li>
+        </ol>
+    </section>
+
+    <!-- External Image Section -->
+    <section>
+        <h2>Sample Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" 
+             alt="Computer setup with coding environment" 
+             width="600"
+             height="400">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St</td>
+                    <td>555-1234</td>
+                    <td>john@example.com</td>
+                </tr>
+                <!-- Add 4 more rows following same pattern -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form id="registration" action="#" method="post">
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" 
+                       placeholder="John Smith" required
+                       pattern="[A-Za-z ]{3,}">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="john@example.com" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       placeholder="••••••••" required
+                       minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d).+$">
+            </fieldset>
+
+            <!-- Additional Fields -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate"
+                       min="1900-01-01" max="2025-03-25">
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select Country</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                </select>
+
+                <!-- Radio Buttons -->
+                <div>
+                    <span>Gender:</span>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                </div>
+
+                <!-- Checkboxes -->
+                <label>
+                    <input type="checkbox" name="newsletter" required> 
+                    Subscribe to newsletter
+                </label>
+            </fieldset>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
